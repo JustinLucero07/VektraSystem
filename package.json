@@ -1,0 +1,16 @@
+{
+  "name": "vektra-systems-web",
+  "version": "1.0.0",
+  "description": "Sitio web de Vektra Systems",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
