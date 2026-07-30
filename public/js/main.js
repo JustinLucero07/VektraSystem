@@ -1,5 +1,6 @@
 (function () {
-  document.getElementById('year').textContent = new Date().getFullYear();
+  var yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
 
   // ---- Hide floating WhatsApp button near the footer to avoid overlap ----
   var floatBtn = document.querySelector('.float-whatsapp');
@@ -16,36 +17,44 @@
   // ---- Mobile nav ----
   var burger = document.getElementById('burger');
   var navLinks = document.getElementById('navLinks');
-  burger.addEventListener('click', function () {
-    var open = navLinks.classList.toggle('open');
-    burger.classList.toggle('open', open);
-    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
-  navLinks.querySelectorAll('a').forEach(function (a) {
-    a.addEventListener('click', function () {
-      navLinks.classList.remove('open');
-      burger.classList.remove('open');
-      burger.setAttribute('aria-expanded', 'false');
+  if (burger && navLinks) {
+    burger.addEventListener('click', function () {
+      var open = navLinks.classList.toggle('open');
+      burger.classList.toggle('open', open);
+      burger.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
-  });
-
-  // ---- Countdown to end of month ----
-  function pad(n) { return String(n).padStart(2, '0'); }
-  function tickCountdown() {
-    var now = new Date();
-    var end = new Date(now.getFullYear(), now.getMonth() + 1, 1, 0, 0, 0);
-    var diff = Math.max(0, end - now);
-    var d = Math.floor(diff / 86400000); diff -= d * 86400000;
-    var h = Math.floor(diff / 3600000); diff -= h * 3600000;
-    var m = Math.floor(diff / 60000); diff -= m * 60000;
-    var s = Math.floor(diff / 1000);
-    document.getElementById('cd-d').textContent = pad(d);
-    document.getElementById('cd-h').textContent = pad(h);
-    document.getElementById('cd-m').textContent = pad(m);
-    document.getElementById('cd-s').textContent = pad(s);
+    navLinks.querySelectorAll('a').forEach(function (a) {
+      a.addEventListener('click', function () {
+        navLinks.classList.remove('open');
+        burger.classList.remove('open');
+        burger.setAttribute('aria-expanded', 'false');
+      });
+    });
   }
-  tickCountdown();
-  setInterval(tickCountdown, 1000);
+
+  // ---- Countdown to end of month (only on pages with the offer block) ----
+  function pad(n) { return String(n).padStart(2, '0'); }
+  var cdD = document.getElementById('cd-d');
+  var cdH = document.getElementById('cd-h');
+  var cdM = document.getElementById('cd-m');
+  var cdS = document.getElementById('cd-s');
+  if (cdD && cdH && cdM && cdS) {
+    var tickCountdown = function () {
+      var now = new Date();
+      var end = new Date(now.getFullYear(), now.getMonth() + 1, 1, 0, 0, 0);
+      var diff = Math.max(0, end - now);
+      var d = Math.floor(diff / 86400000); diff -= d * 86400000;
+      var h = Math.floor(diff / 3600000); diff -= h * 3600000;
+      var m = Math.floor(diff / 60000); diff -= m * 60000;
+      var s = Math.floor(diff / 1000);
+      cdD.textContent = pad(d);
+      cdH.textContent = pad(h);
+      cdM.textContent = pad(m);
+      cdS.textContent = pad(s);
+    };
+    tickCountdown();
+    setInterval(tickCountdown, 1000);
+  }
 
   // ---- Animated stat counters ----
   function animateCount(el) {
@@ -133,4 +142,22 @@
     setTimeout(function () { waitForGSAP(attempts + 1); }, 75);
   }
   waitForGSAP(0);
+
+  // ---- Portfolio filter (only on /portafolio) ----
+  var filterBar = document.querySelector('[data-filters]');
+  if (filterBar) {
+    var filterBtns = filterBar.querySelectorAll('[data-filter]');
+    var cards = document.querySelectorAll('[data-category]');
+    filterBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        filterBtns.forEach(function (b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+        var filter = btn.getAttribute('data-filter');
+        cards.forEach(function (card) {
+          var match = filter === 'Todos' || card.getAttribute('data-category') === filter;
+          card.style.display = match ? '' : 'none';
+        });
+      });
+    });
+  }
 })();
