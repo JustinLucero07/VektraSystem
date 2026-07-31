@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Portafolio · Proyectos Reales | Vektra Systems</title>
-<meta name="description" content="Proyectos reales para negocios reales en Ecuador, Latinoamérica y Estados Unidos: e-commerce, páginas web, sorteos online y más.">
+<meta name="description" content="Proyectos reales para negocios reales en Ecuador, Latinoamérica y Estados Unidos: e-commerce, páginas web, agentes de IA, sistemas gestores y más.">
 <meta name="author" content="Vektra Systems">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://vektrasystems.com/portafolio">
@@ -24,16 +24,25 @@
 <meta name="twitter:description" content="Proyectos reales para negocios reales. Cada uno construido a medida.">
 <meta name="twitter:image" content="https://vektrasystems.com/img/og-image.jpg">
 
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+<link rel="apple-touch-icon" href="/img/favicon.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+
+<!-- ============ TOP URGENT PROMO BAR ============ -->
+<div class="promo-bar">
+  <span class="promo-bar-badge">OFERTA 15% OFF</span>
+  <span class="promo-bar-text">OFERTA ESPECIAL: Quedan 2 días para reclamar 15% de descuento en tu primera página web o sistema</span>
+  <div class="promo-timer"><span id="promo-cd-d">01</span>d <span id="promo-cd-h">18</span>h <span id="promo-cd-m">42</span>m <span id="promo-cd-s">10</span>s</div>
+  <a href="https://wa.me/593992555864?text=Hola%20Vektra%20Systems,%20quiero%20reclamar%20el%2015%25%20de%20descuento" target="_blank" rel="noopener" class="promo-btn">Reclamar 15% OFF →</a>
+</div>
 
 <div class="loader" id="loader">
   <div class="loader-mark"><img src="/img/logo-dark.png" alt="Vektra Systems" class="loader-logo"></div>
@@ -68,48 +77,178 @@
     <button class="filter-tag active" data-filter="Todos">Todos</button>
     <button class="filter-tag" data-filter="E-commerce">E-commerce</button>
     <button class="filter-tag" data-filter="Páginas Web">Páginas Web</button>
-    <button class="filter-tag" data-filter="Sistemas">Sistemas</button>
+    <button class="filter-tag" data-filter="Agentes IA">Agentes IA & n8n</button>
+    <button class="filter-tag" data-filter="Sistemas">Sistemas Gestores</button>
     <button class="filter-tag" data-filter="Sorteos">Sorteos</button>
-    <button class="filter-tag" data-filter="Apps">Apps</button>
   </div>
 
   <div class="portfolio-full-grid">
+
+    <!-- Martial Arts Ecuador (E-commerce) -->
     <div class="portfolio-card" data-expand data-category="E-commerce">
-      <div class="portfolio-card-visual"><span class="serif portfolio-card-initial" data-px>A</span></div>
-      <div class="portfolio-card-body"><div class="portfolio-card-cat">E-commerce</div><div class="portfolio-card-title">Andes Home</div><p class="portfolio-card-desc">Ecommerce completo con catálogo, carrito y pagos.</p></div>
+      <div class="portfolio-card-visual">
+        <img src="/img/portfolio-martialarts.png" alt="Martial Arts Ecuador E-commerce Sitio Real" loading="lazy" width="800" height="550">
+        <div class="portfolio-card-brand-overlay"><img src="/img/client-logos/martialarts.png" alt="Martial Arts Ecuador Logo"></div>
+      </div>
+      <div class="portfolio-card-body">
+        <div class="portfolio-card-cat">E-commerce</div>
+        <div class="portfolio-card-title">Martial Arts Ecuador</div>
+        <p class="portfolio-card-desc">Tienda online oficial distribuidor Adidas Combat Sports con catálogo de vestimenta y equipos de artes marciales (martialartsecuador.com).</p>
+        <a href="https://martialartsecuador.com/" target="_blank" rel="noopener" class="link-arrow">Visitar martialartsecuador.com →</a>
+      </div>
     </div>
-    <div class="portfolio-card" data-expand data-category="Sorteos">
-      <div class="portfolio-card-visual"><span class="serif portfolio-card-initial" data-px>R</span></div>
-      <div class="portfolio-card-body"><div class="portfolio-card-cat">Sorteos</div><div class="portfolio-card-title">Ravensport Ecuador</div><p class="portfolio-card-desc">Sistema de sorteos con pago y selección automática.</p></div>
-    </div>
+
+    <!-- Andes Home (E-commerce) -->
     <div class="portfolio-card" data-expand data-category="E-commerce">
-      <div class="portfolio-card-visual"><span class="serif portfolio-card-initial" data-px>M</span></div>
-      <div class="portfolio-card-body"><div class="portfolio-card-cat">E-commerce</div><div class="portfolio-card-title">Martial Arts Ecuador</div><p class="portfolio-card-desc">Tienda online de artes marciales con catálogo y carrito.</p></div>
+      <div class="portfolio-card-visual">
+        <img src="/img/portfolio-andeshome.png" alt="Andes Home E-commerce Sitio Real" loading="lazy" width="800" height="550">
+        <div class="portfolio-card-brand-overlay"><img src="/img/client-logos/andeshome.png" alt="Andes Home Logo"></div>
+      </div>
+      <div class="portfolio-card-body">
+        <div class="portfolio-card-cat">E-commerce</div>
+        <div class="portfolio-card-title">Andes Home</div>
+        <p class="portfolio-card-desc">Tienda virtual de decoración y muebles de lujo con pasarelas de pago y catálogo completo (andeshome.ec).</p>
+        <a href="https://andeshome.ec" target="_blank" rel="noopener" class="link-arrow">Visitar andeshome.ec →</a>
+      </div>
     </div>
+
+    <!-- Muebleka (E-commerce) -->
+    <div class="portfolio-card" data-expand data-category="E-commerce">
+      <div class="portfolio-card-visual">
+        <img src="/img/portfolio-muebleka.png" alt="Muebleka E-commerce Sitio Real" loading="lazy" width="800" height="550">
+        <div class="portfolio-card-brand-overlay"><img src="/img/client-logos/muebleka.png" alt="Muebleka Logo"></div>
+      </div>
+      <div class="portfolio-card-body">
+        <div class="portfolio-card-cat">E-commerce</div>
+        <div class="portfolio-card-title">Muebleka</div>
+        <p class="portfolio-card-desc">E-commerce de muebles modernos con catálogo interactivo y carrito de compras (muebleka.app).</p>
+        <a href="https://muebleka.app" target="_blank" rel="noopener" class="link-arrow">Visitar muebleka.app →</a>
+      </div>
+    </div>
+
+    <!-- Toques de Miel (E-commerce) -->
+    <div class="portfolio-card" data-expand data-category="E-commerce">
+      <div class="portfolio-card-visual">
+        <img src="/img/portfolio-toquesdemiel.png" alt="Toques de Miel Sitio Real" loading="lazy" width="800" height="550">
+        <div class="portfolio-card-brand-overlay"><img src="/img/client-logos/toquesdemiel.png" alt="Toques de Miel Logo"></div>
+      </div>
+      <div class="portfolio-card-body">
+        <div class="portfolio-card-cat">E-commerce</div>
+        <div class="portfolio-card-title">Toques de Miel</div>
+        <p class="portfolio-card-desc">Plataforma e-commerce para comercialización de productos naturales y cuidado personal (toquesdemiel.com).</p>
+        <a href="https://toquesdemiel.com" target="_blank" rel="noopener" class="link-arrow">Visitar toquesdemiel.com →</a>
+      </div>
+    </div>
+
+    <!-- MILYC (E-commerce) -->
+    <div class="portfolio-card" data-expand data-category="E-commerce">
+      <div class="portfolio-card-visual">
+        <img src="/img/portfolio-milyc.png" alt="MILYC E-commerce Sitio Real" loading="lazy" width="800" height="550">
+        <div class="portfolio-card-brand-overlay"><img src="/img/client-logos/milyc.png" alt="MILYC Logo"></div>
+      </div>
+      <div class="portfolio-card-body">
+        <div class="portfolio-card-cat">E-commerce</div>
+        <div class="portfolio-card-title">MILYC</div>
+        <p class="portfolio-card-desc">Tienda online de moda y prendas exclusivas con pasarelas de pago integradas (milyc.com).</p>
+        <a href="https://milyc.com" target="_blank" rel="noopener" class="link-arrow">Visitar milyc.com →</a>
+      </div>
+    </div>
+
+    <!-- Autoelite (Páginas Web / Catálogo) -->
     <div class="portfolio-card" data-expand data-category="Páginas Web">
-      <div class="portfolio-card-visual"><span class="serif portfolio-card-initial" data-px>A</span></div>
-      <div class="portfolio-card-body"><div class="portfolio-card-cat">Páginas Web</div><div class="portfolio-card-title">Autoelite</div><p class="portfolio-card-desc">Sitio web corporativo para empresa de accesorios de automóviles.</p></div>
+      <div class="portfolio-card-visual">
+        <img src="/img/portfolio-autoelite.png" alt="Autoelite Web Sitio Real" loading="lazy" width="800" height="550">
+        <div class="portfolio-card-brand-overlay"><img src="/img/client-logos/autoelite.png" alt="Autoelite Logo"></div>
+      </div>
+      <div class="portfolio-card-body">
+        <div class="portfolio-card-cat">Páginas Web</div>
+        <div class="portfolio-card-title">Autoelite</div>
+        <p class="portfolio-card-desc">Sitio web corporativo y catálogo de repuestos y accesorios automotrices (grupoautoelitepmvip.com).</p>
+        <a href="https://grupoautoelitepmvip.com/" target="_blank" rel="noopener" class="link-arrow">Visitar grupoautoelitepmvip.com →</a>
+      </div>
     </div>
-    <div class="portfolio-card" data-expand data-category="E-commerce">
-      <div class="portfolio-card-visual"><span class="serif portfolio-card-initial" data-px>M</span></div>
-      <div class="portfolio-card-body"><div class="portfolio-card-cat">E-commerce</div><div class="portfolio-card-title">Muebleka</div><p class="portfolio-card-desc">Tienda online de muebles con catálogo y carrito.</p></div>
-    </div>
-    <div class="portfolio-card" data-expand data-category="E-commerce">
-      <div class="portfolio-card-visual"><span class="serif portfolio-card-initial" data-px>T</span></div>
-      <div class="portfolio-card-body"><div class="portfolio-card-cat">E-commerce</div><div class="portfolio-card-title">Toques de Miel</div><p class="portfolio-card-desc">Tienda online de venta de productos naturales.</p></div>
-    </div>
-    <div class="portfolio-card" data-expand data-category="E-commerce">
-      <div class="portfolio-card-visual"><span class="serif portfolio-card-initial" data-px>M</span></div>
-      <div class="portfolio-card-body"><div class="portfolio-card-cat">E-commerce</div><div class="portfolio-card-title">MILYC</div><p class="portfolio-card-desc">Tienda de ropa con catálogo, carrito y pasarela de pago.</p></div>
-    </div>
+
+    <!-- Cuencasa (Páginas Web) -->
     <div class="portfolio-card" data-expand data-category="Páginas Web">
-      <div class="portfolio-card-visual"><span class="serif portfolio-card-initial" data-px>L</span></div>
-      <div class="portfolio-card-body"><div class="portfolio-card-cat">Páginas Web</div><div class="portfolio-card-title">Louis Upholstery Inc</div><p class="portfolio-card-desc">Sitio corporativo para empresa de tapicería en Estados Unidos.</p></div>
+      <div class="portfolio-card-visual">
+        <img src="/img/portfolio-cuencasa.png" alt="Cuencasa Inmobiliaria Web Sitio Real" loading="lazy" width="800" height="550">
+        <div class="portfolio-card-brand-overlay"><img src="/img/client-logos/cuencasa.png" alt="Cuencasa Logo"></div>
+      </div>
+      <div class="portfolio-card-body">
+        <div class="portfolio-card-cat">Páginas Web</div>
+        <div class="portfolio-card-title">Cuencasa — Inmobiliaria Web</div>
+        <p class="portfolio-card-desc">Sitio web inmobiliario para promoción, catálogo interactivo y venta de bienes raíces (cuencasa.net).</p>
+        <a href="https://cuencasa.net" target="_blank" rel="noopener" class="link-arrow">Visitar cuencasa.net →</a>
+      </div>
     </div>
+
+    <!-- Inmomarsa (Páginas Web) -->
+    <div class="portfolio-card" data-expand data-category="Páginas Web">
+      <div class="portfolio-card-visual">
+        <img src="/img/portfolio-inmomarsa.png" alt="Inmomarsa Inmobiliaria Web Sitio Real" loading="lazy" width="800" height="550">
+        <div class="portfolio-card-brand-overlay"><img src="/img/client-logos/inmomarsa.png" alt="Inmomarsa Logo"></div>
+      </div>
+      <div class="portfolio-card-body">
+        <div class="portfolio-card-cat">Páginas Web</div>
+        <div class="portfolio-card-title">Inmomarsa — Inmobiliaria Web</div>
+        <p class="portfolio-card-desc">Sitio web inmobiliario a medida para exhibición y gestión de terrenos, casas y departamentos (inmomarsa.com).</p>
+        <a href="https://inmomarsa.com" target="_blank" rel="noopener" class="link-arrow">Visitar inmomarsa.com →</a>
+      </div>
+    </div>
+
+    <!-- Ravensport Ecuador (Sorteos) -->
     <div class="portfolio-card" data-expand data-category="Sorteos">
-      <div class="portfolio-card-visual"><span class="serif portfolio-card-initial" data-px>R</span></div>
-      <div class="portfolio-card-body"><div class="portfolio-card-cat">Sorteos</div><div class="portfolio-card-title">Ruedamania</div><p class="portfolio-card-desc">Plataforma de sorteos online para promociones y rifas.</p></div>
+      <div class="portfolio-card-visual">
+        <img src="/img/portfolio-ravensport.png" alt="Ravensport Ecuador Sorteos Sitio Real" loading="lazy" width="800" height="550">
+        <div class="portfolio-card-brand-overlay"><img src="/img/client-logos/ravensport.png" alt="Ravensport Ecuador Logo"></div>
+      </div>
+      <div class="portfolio-card-body">
+        <div class="portfolio-card-cat">Sorteos Online</div>
+        <div class="portfolio-card-title">Ravensport Ecuador</div>
+        <p class="portfolio-card-desc">Plataforma de sorteos y rifas deportivas con compra de boletos y selección automática (ravensportecuador.com).</p>
+        <a href="https://ravensportecuador.com" target="_blank" rel="noopener" class="link-arrow">Visitar ravensportecuador.com →</a>
+      </div>
     </div>
+
+    <!-- Agente IA n8n (Agentes IA) -->
+    <div class="portfolio-card" data-expand data-category="Agentes IA">
+      <div class="portfolio-card-visual">
+        <img src="/img/portfolio-ai.jpg" alt="Agente IA n8n Automatización" loading="lazy" width="800" height="550">
+      </div>
+      <div class="portfolio-card-body">
+        <div class="portfolio-card-cat">Agentes IA & n8n</div>
+        <div class="portfolio-card-title">Agente IA & Automatización n8n</div>
+        <p class="portfolio-card-desc">Asistente de Inteligencia Artificial multicanal integrado con n8n, WhatsApp API y CRM para atención 24/7 y agendamiento automático.</p>
+        <span class="link-arrow">Solución IA a Medida</span>
+      </div>
+    </div>
+
+    <!-- Odoo Inmobiliario (Sistemas) -->
+    <div class="portfolio-card" data-expand data-category="Sistemas">
+      <div class="portfolio-card-visual">
+        <img src="/img/portfolio-odoo.jpg" alt="Sistema Gestor Inmobiliario Odoo" loading="lazy" width="800" height="550">
+      </div>
+      <div class="portfolio-card-body">
+        <div class="portfolio-card-cat">Sistemas Gestores</div>
+        <div class="portfolio-card-title">Sistema Gestor Inmobiliario Odoo</div>
+        <p class="portfolio-card-desc">Sistema ERP gestor inmobiliario a medida basado en Odoo para administración de propiedades, agentes, contratos y comisiones.</p>
+        <span class="link-arrow">Sistema a Medida Custom</span>
+      </div>
+    </div>
+
+    <!-- ForeverVision (Sistemas) -->
+    <div class="portfolio-card" data-expand data-category="Sistemas">
+      <div class="portfolio-card-visual">
+        <img src="/img/portfolio-optica.jpg" alt="ForeverVision Sistema para Optica" loading="lazy" width="800" height="550">
+      </div>
+      <div class="portfolio-card-body">
+        <div class="portfolio-card-cat">Sistemas Gestores</div>
+        <div class="portfolio-card-title">ForeverVision — Sistema para Óptica</div>
+        <p class="portfolio-card-desc">Software a medida para gestión clínica y comercial de óptica, pacientes, recetas oftálmicas, lentes e inventario.</p>
+        <span class="link-arrow">Sistema a Medida Custom</span>
+      </div>
+    </div>
+
   </div>
 
   <section class="final-cta">
@@ -117,7 +256,7 @@
       <h2 class="serif final-cta-title">¿Tu proyecto <em>aquí?</em></h2>
       <p class="final-cta-desc">Cuéntanos tu idea y lo construimos juntos.</p>
       <div class="final-cta-actions">
-        <a href="https://wa.me/593992555864" class="btn btn-whatsapp" target="_blank" rel="noopener">Empezar proyecto</a>
+        <a href="https://wa.me/593992555864" class="btn btn-whatsapp" target="_blank" rel="noopener">Empezar proyecto →</a>
       </div>
     </div>
   </section>
@@ -156,7 +295,7 @@
     </div>
     <div class="footer-bottom">
       <span>© <span id="year">2026</span> Vektra Systems. Todos los derechos reservados.</span>
-      <span>Hecho con precisión en Ecuador 🇪🇨</span>
+      <span>Hecho con precisión en Ecuador</span>
     </div>
   </footer>
 
