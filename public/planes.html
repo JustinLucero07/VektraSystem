@@ -33,6 +33,49 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="/css/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "OfferCatalog",
+      "name": "Planes y Precios Vektra Systems",
+      "url": "https://vektrasystems.com/planes",
+      "itemListElement": [
+        { "@type": "Offer", "name": "Inicio Digital", "price": "95", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Landing Page Pro", "price": "120", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Avance Digital", "price": "125", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Visión Web", "price": "150", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Impacto Web", "price": "175", "priceCurrency": "USD" },
+        { "@type": "Offer", "name": "Dominio Digital", "price": "200", "priceCurrency": "USD" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Puedo pagar en cuotas?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Depende del plan y el monto. Escríbenos por WhatsApp y revisamos juntos las opciones de pago disponibles." }
+        },
+        {
+          "@type": "Question",
+          "name": "¿El hosting y dominio están incluidos para siempre?",
+          "acceptedAnswer": { "@type": "Answer", "text": "El dominio se incluye por 1 año y el hosting según el nivel de tu plan." }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://vektrasystems.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Planes", "item": "https://vektrasystems.com/planes" }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -45,14 +88,14 @@
 </div>
 
 <div class="loader" id="loader">
-  <div class="loader-mark"><img src="/img/logo-dark.png" alt="Vektra Systems" class="loader-logo"></div>
+  <div class="loader-mark"><img src="/img/logo-dark.png" alt="Vektra Systems" class="loader-logo" width="220" height="50"></div>
   <div class="loader-bar"><div class="loader-bar-fill"></div></div>
 </div>
 
 <div class="wrap">
 
   <header class="nav">
-    <a href="/" class="logo"><img src="/img/logo-dark.png" alt="Vektra Systems" class="logo-img"></a>
+    <a href="/" class="logo"><img src="/img/logo-dark.png" alt="Vektra Systems" class="logo-img" width="220" height="50"></a>
     <nav class="nav-links" id="navLinks">
       <a href="/">Inicio</a>
       <a href="/servicios">Servicios</a>
@@ -212,6 +255,7 @@
       <h2 class="serif section-title">¿Cuál plan <em>es para ti?</em></h2>
     </div>
   </section>
+  <div class="compare-scroll-hint"><span>Desliza horizontalmente la tabla para ver todos los planes ↔</span></div>
   <div class="compare-wrap" data-reveal>
     <table class="compare-table">
       <thead>
@@ -287,7 +331,7 @@
   <footer class="footer">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="/" class="footer-logo"><img src="/img/logo-light.png" alt="Vektra Systems" class="footer-logo-img"></a>
+        <a href="/" class="footer-logo"><img src="/img/logo-light.png" alt="Vektra Systems" class="footer-logo-img" width="180" height="38"></a>
         <p>Sistemas digitales construidos con precisión para negocios reales en Ecuador y Latinoamérica.</p>
         <div class="footer-social">
           <a href="https://wa.me/593992555864" target="_blank" rel="noopener">WhatsApp</a>

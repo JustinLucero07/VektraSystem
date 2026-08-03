@@ -38,21 +38,32 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Service",
-  "provider": { "@type": "ProfessionalService", "name": "Vektra Systems", "url": "https://vektrasystems.com/" },
-  "areaServed": { "@type": "Country", "name": "Ecuador" },
-  "hasOfferCatalog": {
-    "@type": "OfferCatalog",
-    "name": "Servicios Vektra Systems",
-    "itemListElement": [
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Páginas Web" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-commerce" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistemas Gestores" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automatizaciones" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Páginas de Sorteos" } },
-      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Apps a Medida" } }
-    ]
-  }
+  "@graph": [
+    {
+      "@type": "Service",
+      "provider": { "@type": "ProfessionalService", "name": "Vektra Systems", "url": "https://vektrasystems.com/" },
+      "areaServed": { "@type": "Country", "name": "Ecuador" },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servicios Vektra Systems",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Páginas Web" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "E-commerce" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sistemas Gestores" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Automatizaciones" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Páginas de Sorteos" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Apps a Medida" } }
+        ]
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://vektrasystems.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Servicios", "item": "https://vektrasystems.com/servicios" }
+      ]
+    }
+  ]
 }
 </script>
 </head>
@@ -67,14 +78,14 @@
 </div>
 
 <div class="loader" id="loader">
-  <div class="loader-mark"><img src="/img/logo-dark.png" alt="Vektra Systems" class="loader-logo"></div>
+  <div class="loader-mark"><img src="/img/logo-dark.png" alt="Vektra Systems" class="loader-logo" width="220" height="50"></div>
   <div class="loader-bar"><div class="loader-bar-fill"></div></div>
 </div>
 
 <div class="wrap">
 
   <header class="nav">
-    <a href="/" class="logo"><img src="/img/logo-dark.png" alt="Vektra Systems" class="logo-img"></a>
+    <a href="/" class="logo"><img src="/img/logo-dark.png" alt="Vektra Systems" class="logo-img" width="220" height="50"></a>
     <nav class="nav-links" id="navLinks">
       <a href="/">Inicio</a>
       <a href="/servicios" class="active">Servicios</a>
