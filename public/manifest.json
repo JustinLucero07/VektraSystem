@@ -1,0 +1,22 @@
+{
+  "name": "Vektra Systems · Ingeniería Web & Software",
+  "short_name": "Vektra Systems",
+  "description": "Sistemas web a medida, e-commerce y software empresarial de alta conversión en Ecuador.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080B11",
+  "theme_color": "#080B11",
+  "lang": "es-EC",
+  "icons": [
+    {
+      "src": "/img/favicon.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/logo-dark.webp",
+      "sizes": "190x42",
+      "type": "image/webp"
+    }
+  ]
+}

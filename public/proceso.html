@@ -1,230 +1,524 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Proceso · Cómo Trabajamos Paso a Paso | Vektra Systems</title>
-<meta name="description" content="Un proceso claro, sin sorpresas: briefing, diseño, desarrollo, testing y lanzamiento. Conoce cómo trabajamos en cada etapa de tu proyecto digital.">
-<meta name="author" content="Vektra Systems">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://vektrasystems.com/proceso">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proceso de Desarrollo · Metodología Paso a Paso | Vektra Systems</title>
+  <meta name="description" content="Conoce nuestro proceso de ingeniería web y software paso a paso: diagnóstico, diseño UX/UI, desarrollo ágil, control de calidad y despliegue en producción en Ecuador.">
+  <meta name="keywords" content="metodologia desarrollo web ecuador, proceso creacion pagina web cuenca, etapas desarrollo software quito guayaquil">
+  <meta name="author" content="Vektra Systems">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://vektrasystems.com/proceso">
 
-<meta property="og:locale" content="es_EC">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Vektra Systems">
-<meta property="og:url" content="https://vektrasystems.com/proceso">
-<meta property="og:title" content="Proceso · Cómo trabajamos contigo, paso a paso | Vektra Systems">
-<meta property="og:description" content="Un proceso claro, sin sorpresas. Sabes exactamente qué pasa en cada etapa de tu proyecto.">
-<meta property="og:image" content="https://vektrasystems.com/img/og-image.jpg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
+  <meta property="og:locale" content="es_EC">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Vektra Systems">
+  <meta property="og:url" content="https://vektrasystems.com/proceso">
+  <meta property="og:title" content="Proceso de Desarrollo · Cómo Trabajamos | Vektra Systems">
+  <meta property="og:description" content="Metodología ágil en 5 etapas claras con entregables definidos, fechas reales y comunicación constante.">
+  <meta property="og:image" content="https://vektrasystems.com/img/hero-proceso.webp">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Proceso · Cómo trabajamos contigo, paso a paso | Vektra Systems">
-<meta name="twitter:description" content="Un proceso claro, sin sorpresas. Sabes exactamente qué pasa en cada etapa de tu proyecto.">
-<meta name="twitter:image" content="https://vektrasystems.com/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Proceso de Desarrollo · Cómo Trabajamos | Vektra Systems">
+  <meta name="twitter:description" content="Sin sorpresas ni retrasos: briefing, diseño, desarrollo, pruebas exhaustivas y despliegue con garantía.">
+  <meta name="twitter:image" content="https://vektrasystems.com/img/hero-proceso.webp">
 
-<link rel="shortcut icon" href="/favicon.ico">
-<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
-<link rel="apple-touch-icon" href="/img/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon.png">
+  <link rel="apple-touch-icon" href="/img/favicon.png">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "HowTo",
-      "name": "Proceso de Desarrollo Web y Sistemas en Vektra Systems",
-      "step": [
-        { "@type": "HowToStep", "position": 1, "name": "Reunión y briefing" },
-        { "@type": "HowToStep", "position": 2, "name": "Diseño y prototipo" },
-        { "@type": "HowToStep", "position": 3, "name": "Construcción" },
-        { "@type": "HowToStep", "position": 4, "name": "Testing y ajustes" },
-        { "@type": "HowToStep", "position": 5, "name": "Deploy y entrega" }
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://vektrasystems.com/" },
-        { "@type": "ListItem", "position": 2, "name": "Proceso", "item": "https://vektrasystems.com/proceso" }
-      ]
-    }
-  ]
-}
-</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "HowTo",
+        "name": "Proceso de Ingeniería y Desarrollo Web en Vektra Systems",
+        "description": "Metodología de 5 etapas para el diseño, desarrollo y lanzamiento de sistemas web y software en Ecuador.",
+        "step": [
+          {
+            "@type": "HowToStep",
+            "position": 1,
+            "name": "Diagnóstico y Definición de Alcance",
+            "text": "Sesión estratégica para analizar necesidades del negocio, arquitectura técnica, plazos y propuesta formal con cotización fija."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 2,
+            "name": "Diseño UX/UI y Prototipado Interactivo",
+            "text": "Estructuración de wireframes, flujos de conversión de usuario y prototipos navegables antes de comenzar a escribir código."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 3,
+            "name": "Desarrollo y Construcción de Software",
+            "text": "Desarrollo frontend y backend con estándares modernos, pasarelas de pago locales y APIs de integración."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 4,
+            "name": "Aseguramiento de Calidad y Pruebas (QA)",
+            "text": "Auditorías de Core Web Vitals, pruebas de seguridad, compatibilidad multi-dispositivo y validación de pasarelas de cobro."
+          },
+          {
+            "@type": "HowToStep",
+            "position": 5,
+            "name": "Despliegue, Capacitación y Garantía",
+            "text": "Puesta en marcha en servidores de producción, configuración DNS/SSL, entrega de accesos y 30 días de soporte post-lanzamiento."
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://vektrasystems.com/" },
+          { "@type": "ListItem", "position": 2, "name": "Proceso", "item": "https://vektrasystems.com/proceso" }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
-<!-- ============ TOP URGENT PROMO BAR ============ -->
-<div class="promo-bar">
-  <span class="promo-bar-badge">OFERTA 15% OFF</span>
-  <span class="promo-bar-text">OFERTA ESPECIAL: Quedan 2 días para reclamar 15% de descuento en tu primera página web o sistema</span>
-  <div class="promo-timer"><span id="promo-cd-d">01</span>d <span id="promo-cd-h">18</span>h <span id="promo-cd-m">42</span>m <span id="promo-cd-s">10</span>s</div>
-  <a href="https://wa.me/593992555864?text=Hola%20Vektra%20Systems,%20quiero%20reclamar%20el%2015%25%20de%20descuento" target="_blank" rel="noopener" class="promo-btn">Reclamar 15% OFF →</a>
-</div>
-
-<div class="loader" id="loader">
-  <div class="loader-mark"><img src="/img/logo-dark.png" alt="Vektra Systems" class="loader-logo" width="220" height="50"></div>
-  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
-</div>
-
-<div class="wrap">
-
-  <header class="nav">
-    <a href="/" class="logo"><img src="/img/logo-dark.png" alt="Vektra Systems" class="logo-img" width="220" height="50"></a>
-    <nav class="nav-links" id="navLinks">
-      <a href="/">Inicio</a>
-      <a href="/servicios">Servicios</a>
-      <a href="/planes">Planes</a>
-      <a href="/proceso" class="active">Proceso</a>
-      <a href="/portafolio">Portafolio</a>
-      <a href="/nosotros">Nosotros</a>
-    </nav>
-    <a href="https://wa.me/593992555864" class="btn btn-ghost nav-cta" target="_blank" rel="noopener"><span class="dot-live"></span>Hablemos</a>
-    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
-  </header>
-
-  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Inicio</a><span>/</span><span>Proceso</span></nav>
-
-  <section class="page-hero">
-    <p class="eyebrow eyebrow-accent" data-reveal>CÓMO TRABAJAMOS</p>
-    <h1 class="serif page-hero-title" data-reveal>Un proceso claro, <em>paso a paso.</em></h1>
-    <p class="page-hero-sub" data-reveal>Sin sorpresas. Sabes exactamente qué pasa en cada etapa de tu proyecto.</p>
-  </section>
-
-  <div class="hero-img-section" data-hero-section>
-    <div class="hero-img-expand" data-hero-expand>
-      <div class="hero-img-inner" data-hero-inner>
-        <img src="/img/hero-proceso.jpg" alt="Equipo de desarrollo trabajando en un proyecto" width="1800" height="1201">
-      </div>
+  <!-- Top Announcement Bar -->
+  <div class="promo-bar">
+    <div class="container promo-bar-inner">
+      <span class="promo-badge">METODOLOGÍA ÁGIL</span>
+      <span class="promo-text">Conoce nuestras 5 fases de ingeniería con entregables claros y cronograma semanal transparente.</span>
+      <a href="https://wa.me/593992555864?text=Hola%20Vektra%20Systems,%20quiero%20conocer%20el%20tiempo%20estimado%20para%20mi%20proyecto" target="_blank" rel="noopener" class="promo-link">Consultar tiempos <svg class="svg-icon" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg></a>
     </div>
   </div>
 
-  <section class="timeline">
-    <div class="timeline-step" data-reveal>
-      <div class="serif timeline-n">01</div>
-      <div>
-        <h2 class="timeline-title">Reunión y briefing</h2>
-        <p class="timeline-desc">Nos cuentas todo sobre tu negocio, tus metas y lo que necesitas.</p>
-        <div class="timeline-tasks"><span>Llamada / Zoom</span><span>Análisis competitivo</span><span>Definición de objetivos</span><span>Propuesta personalizada</span></div>
-        <div class="timeline-duration">1–2 días</div>
-      </div>
-    </div>
-    <div class="timeline-step" data-reveal>
-      <div class="serif timeline-n">02</div>
-      <div>
-        <h2 class="timeline-title">Diseño y prototipo</h2>
-        <p class="timeline-desc">Diseñamos la interfaz completa antes de escribir una sola línea de código.</p>
-        <div class="timeline-tasks"><span>Wireframes</span><span>Sistema de diseño</span><span>Revisiones ilimitadas</span><span>Prototipo interactivo</span></div>
-        <div class="timeline-duration">3–7 días</div>
-      </div>
-    </div>
-    <div class="timeline-step" data-reveal>
-      <div class="serif timeline-n">03</div>
-      <div>
-        <h2 class="timeline-title">Construcción</h2>
-        <p class="timeline-desc">Construimos con código limpio, escalable y moderno.</p>
-        <div class="timeline-tasks"><span>Frontend</span><span>Backend</span><span>Integraciones</span><span>Pruebas multi-dispositivo</span></div>
-        <div class="timeline-duration">7–21 días</div>
-      </div>
-    </div>
-    <div class="timeline-step" data-reveal>
-      <div class="serif timeline-n">04</div>
-      <div>
-        <h2 class="timeline-title">Testing y ajustes</h2>
-        <p class="timeline-desc">Probamos todo exhaustivamente y hacemos los ajustes finales.</p>
-        <div class="timeline-tasks"><span>Testing en navegadores</span><span>Velocidad / SEO</span><span>Ajustes</span><span>Aprobación final</span></div>
-        <div class="timeline-duration">2–4 días</div>
-      </div>
-    </div>
-    <div class="timeline-step" data-reveal>
-      <div class="serif timeline-n">05</div>
-      <div>
-        <h2 class="timeline-title">Deploy y entrega</h2>
-        <p class="timeline-desc">Publicamos tu proyecto, te entregamos accesos y te capacitamos.</p>
-        <div class="timeline-tasks"><span>Deploy</span><span>Dominio</span><span>Capacitación</span><span>Soporte post-entrega</span></div>
-        <div class="timeline-duration">1 día</div>
-      </div>
-    </div>
-  </section>
+  <div class="wrap">
 
-  <section class="process">
-    <div class="section-head-center" data-reveal>
-      <p class="eyebrow eyebrow-light">GARANTÍAS</p>
-      <h2 class="serif section-title-light">Lo que siempre <em>cumplimos.</em></h2>
-    </div>
-    <div class="value-grid">
-      <div class="value-card value-card-dark" data-reveal><div class="value-title">Entrega puntual</div><p class="value-desc">Acordamos fechas reales y las cumplimos.</p></div>
-      <div class="value-card value-card-dark" data-reveal><div class="value-title">Revisiones incluidas</div><p class="value-desc">Ajustes sin costo extra hasta que el proyecto esté perfecto.</p></div>
-      <div class="value-card value-card-dark" data-reveal><div class="value-title">Código tuyo</div><p class="value-desc">Al finalizar, el código y los accesos son 100% tuyos.</p></div>
-      <div class="value-card value-card-dark" data-reveal><div class="value-title">Soporte post-entrega</div><p class="value-desc">30 días de soporte incluido después del lanzamiento.</p></div>
-    </div>
-  </section>
-
-  <section class="final-cta">
-    <div class="final-cta-card" data-reveal>
-      <h2 class="serif final-cta-title">¿Listo para <em>empezar?</em></h2>
-      <p class="final-cta-desc">Contáctanos y comenzamos el proceso esta semana.</p>
-      <div class="final-cta-actions">
-        <a href="https://wa.me/593992555864" class="btn btn-whatsapp" target="_blank" rel="noopener">Empezar ahora</a>
+    <!-- Header Navigation -->
+    <header class="nav">
+      <a href="/" class="logo" aria-label="Ir al inicio de Vektra Systems">
+        <img src="/img/logo-dark.webp" alt="Vektra Systems Logo" class="logo-img" width="190" height="42">
+      </a>
+      <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
+        <a href="/">Inicio</a>
+        <a href="/servicios">Servicios</a>
+        <a href="/planes">Planes</a>
+        <a href="/proceso" class="active" aria-current="page">Proceso</a>
+        <a href="/portafolio">Portafolio</a>
+        <a href="/nosotros">Nosotros</a>
+        <a href="/contacto">Contacto</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="https://wa.me/593992555864?text=Hola%20Vektra%20Systems,%20quiero%20iniciar%20un%20proyecto%20con%20su%20metodologia" class="btn btn-ghost nav-cta" target="_blank" rel="noopener">
+          <span class="dot-live" aria-hidden="true"></span> Iniciar Proyecto
+        </a>
+        <button class="burger" id="burger" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-    </div>
-  </section>
+    </header>
 
-  <footer class="footer">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="/" class="footer-logo"><img src="/img/logo-light.png" alt="Vektra Systems" class="footer-logo-img" width="180" height="38"></a>
-        <p>Sistemas digitales construidos con precisión para negocios reales en Ecuador y Latinoamérica.</p>
-        <div class="footer-social">
-          <a href="https://wa.me/593992555864" target="_blank" rel="noopener">WhatsApp</a>
-          <a href="https://www.instagram.com/vektrasystems" target="_blank" rel="noopener">Instagram</a>
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb" aria-label="Miga de pan">
+      <div class="container">
+        <a href="/">Inicio</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">Proceso</span>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-modern-section" data-reveal style="margin-bottom: 2.5rem;">
+      <div class="hero-modern-grid">
+        <div class="hero-modern-content">
+          <div class="hero-badge-pill">
+            <span class="live-pulse-dot"></span>
+            METODOLOGÍA DE INGENIERÍA · 5 FASES
+          </div>
+          <h1 class="hero-modern-title">Un proceso estructurado, <em>sin sorpresas.</em></h1>
+          <p class="hero-modern-sub">
+            Desarrollar software o un sitio web corporativo no tiene por qué ser un laberinto incierto. Trabajamos con sprints definidos, entregables tangibles en cada etapa y comunicación directa para que siempre sepas el estado exacto de tu proyecto.
+          </p>
+          <div class="hero-modern-actions">
+            <a href="https://wa.me/593992555864?text=Hola%20Vektra%20Systems,%20quiero%20iniciar%20un%20proyecto%20con%20su%20metodologia"
+              class="btn btn-primary" target="_blank" rel="noopener">
+              Iniciar proyecto ahora
+              <svg class="svg-icon" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            </a>
+            <a href="/portafolio" class="btn btn-secondary">
+              Ver casos de éxito reales
+            </a>
+          </div>
+          <div class="hero-trust-row">
+            <div class="trust-item">
+              <svg class="svg-icon" width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Cronograma Semanal Transparente
+            </div>
+            <div class="trust-item">
+              <svg class="svg-icon" width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              Entregables Tangibles por Fase
+            </div>
+            <div class="trust-item">
+              <svg class="svg-icon" width="16" height="16" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              30 Días de Garantía Post-Lanzamiento
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-modern-visual">
+          <div class="hero-visual-card">
+            <div class="window-header">
+              <div class="window-controls">
+                <span class="win-btn win-close"></span>
+                <span class="win-btn win-min"></span>
+                <span class="win-btn win-max"></span>
+              </div>
+              <div class="window-url-bar">
+                <svg class="svg-icon" width="12" height="12" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"/></svg>
+                https://metodologia.vektrasystems.com/sprint-pipeline
+              </div>
+              <div class="window-status-badge">
+                <span class="live-pulse-dot"></span>
+                Sprint Engine
+              </div>
+            </div>
+
+            <div class="window-content">
+              <div class="hud-metrics-grid">
+                <div class="hud-metric-box">
+                  <span class="hud-metric-val">5</span>
+                  <span class="hud-metric-lbl">Fases Ágiles</span>
+                </div>
+                <div class="hud-metric-box">
+                  <span class="hud-metric-val">100%</span>
+                  <span class="hud-metric-lbl">Entregables Claros</span>
+                </div>
+                <div class="hud-metric-box">
+                  <span class="hud-metric-val">0</span>
+                  <span class="hud-metric-lbl">Días Perdidos</span>
+                </div>
+              </div>
+
+              <div class="hud-pipeline-step">
+                <div class="step-num">01</div>
+                <div class="step-text">
+                  <strong>Diagnóstico & Arquitectura de Información</strong>
+                  <span>Sesión estratégica, análisis de requerimientos y cotización formal fija.</span>
+                </div>
+              </div>
+
+              <div class="hud-pipeline-step">
+                <div class="step-num">02</div>
+                <div class="step-text">
+                  <strong>Diseño UX/UI & Prototipo Interactivo</strong>
+                  <span>Estructuras de alta conversión y pantallas navegables validadas.</span>
+                </div>
+              </div>
+
+              <div class="hud-pipeline-step">
+                <div class="step-num">03</div>
+                <div class="step-text">
+                  <strong>Desarrollo, QA & Puesta en Producción</strong>
+                  <span>Código optimizado, pasarelas de pago y despliegue con SSL activo.</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer-col">
-        <h4>Servicios</h4>
-        <a href="/servicios">Páginas Web</a>
-        <a href="/servicios">E-commerce</a>
-        <a href="/servicios">Sistemas Gestores</a>
-        <a href="/servicios">Automatizaciones</a>
-        <a href="/servicios">Sorteos Online</a>
-      </div>
-      <div class="footer-col">
-        <h4>Empresa</h4>
-        <a href="/nosotros">Nosotros</a>
-        <a href="/planes">Planes</a>
-        <a href="/portafolio">Portafolio</a>
-        <a href="/proceso">Proceso</a>
-      </div>
-      <div class="footer-col">
-        <h4>Contacto</h4>
-        <a href="mailto:info@vektrasystems.com">info@vektrasystems.com</a>
-        <a href="https://wa.me/593992555864" target="_blank" rel="noopener">+593 99 255 5864</a>
-        <span class="footer-static">Ecuador · Remoto</span>
+    </section>
+
+    <!-- Hero Visual Section -->
+    <div class="container" style="margin-bottom: 4rem;">
+      <div class="hero-img-section" data-hero-section>
+        <div class="hero-img-expand" data-hero-expand>
+          <div class="hero-img-inner" data-hero-inner>
+            <img src="/img/hero-proceso.webp" alt="Equipo de ingenieros y diseñadores planificando sprints en Vektra Systems" width="1800" height="1201" loading="lazy">
+          </div>
+        </div>
       </div>
     </div>
-    <div class="footer-bottom">
-      <span>© <span id="year">2026</span> Vektra Systems. Todos los derechos reservados.</span>
-      <span>Hecho con precisión en Ecuador</span>
-    </div>
-  </footer>
 
-</div>
+    <!-- 5-Step Timeline -->
+    <section class="timeline-section" style="padding-bottom: 5rem;">
+      <div class="container">
+        <div class="section-head-center" data-reveal style="margin-bottom: 3.5rem;">
+          <p class="eyebrow eyebrow-accent">LAS 5 FASES</p>
+          <h2 class="serif section-title">De la estrategia inicial<br>al <em>despliegue en producción.</em></h2>
+        </div>
 
-<a href="https://wa.me/593992555864" class="float-whatsapp" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
-  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.2L2 22l4.9-1.3C8.4 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.7 0-3.4-.5-4.8-1.3l-.3-.2-3.2.8.9-3.1-.2-.3C3.6 14.5 3 13.3 3 12c0-4.9 4.1-9 9-9s9 4.1 9 9-4.1 9-9 9z"/></svg>
-  WhatsApp
-</a>
+        <div class="timeline">
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="/js/main.js"></script>
+          <!-- Step 01 -->
+          <div class="timeline-step" data-reveal>
+            <div class="serif timeline-n">01</div>
+            <div class="timeline-content">
+              <div class="timeline-meta-bar">
+                <span class="timeline-duration-badge">Duración: 1 a 2 días</span>
+                <span class="timeline-deliverable">Entregable: Documento de Arquitectura y Cotización Fija</span>
+              </div>
+              <h3 class="timeline-title">Diagnóstico y Definición de Alcance</h3>
+              <p class="timeline-desc">Nos reunimos (vía Google Meet, Zoom o presencial en Cuenca) para entender a fondo la dinámica de tu negocio, los cuellos de botella actuales, tu competencia directa y los objetivos cuantitativos del sistema.</p>
+              
+              <div class="timeline-tasks">
+                <span>Sesión de descubrimiento</span>
+                <span>Análisis de usuarios y competencia</span>
+                <span>Definición de stack tecnológico</span>
+                <span>Cronograma y presupuesto cerrado</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="timeline-step" data-reveal>
+            <div class="serif timeline-n">02</div>
+            <div class="timeline-content">
+              <div class="timeline-meta-bar">
+                <span class="timeline-duration-badge">Duración: 3 a 7 días</span>
+                <span class="timeline-deliverable">Entregable: Prototipo Interactivo en Figma y Sistema de Diseño</span>
+              </div>
+              <h3 class="timeline-title">Diseño UX/UI y Prototipado Interactivo</h3>
+              <p class="timeline-desc">Diseñamos la estructura completa de la interfaz en alta fidelidad antes de programar una sola línea de código. Validamos la jerarquía visual, los textos persuasivos y los caminos de conversión para escritorio y móviles.</p>
+              
+              <div class="timeline-tasks">
+                <span>Wireframes funcionales</span>
+                <span>Diseño UI alta fidelidad</span>
+                <span>Enfoque Mobile First</span>
+                <span>Prototipo interactivo navegable</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 03 -->
+          <div class="timeline-step" data-reveal>
+            <div class="serif timeline-n">03</div>
+            <div class="timeline-content">
+              <div class="timeline-meta-bar">
+                <span class="timeline-duration-badge">Duración: 7 a 21 días (según escala)</span>
+                <span class="timeline-deliverable">Entregable: Entorno de Pruebas (Staging) Funcionando</span>
+              </div>
+              <h3 class="timeline-title">Construcción y Desarrollo de Software</h3>
+              <p class="timeline-desc">Programamos la solución con código modular, semántico y escalable. Conectamos bases de datos seguras, pasarelas de pago ecuatorianas y APIs de mensajería (WhatsApp, n8n, CRM) garantizando un desempeño veloz.</p>
+              
+              <div class="timeline-tasks">
+                <span>Frontend semántico y accesible</span>
+                <span>Backend seguro y escalable</span>
+                <span>Integración de pagos (Payphone/Kushki)</span>
+                <span>Entorno staging para revisión</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="timeline-step" data-reveal>
+            <div class="serif timeline-n">04</div>
+            <div class="timeline-content">
+              <div class="timeline-meta-bar">
+                <span class="timeline-duration-badge">Duración: 2 a 4 días</span>
+                <span class="timeline-deliverable">Entregable: Informe de Auditoría Lighthouse 90+ y QA Multi-dispositivo</span>
+              </div>
+              <h3 class="timeline-title">Control de Calidad, SEO y Pruebas Exhaustivas</h3>
+              <p class="timeline-desc">Sometemos el sistema a pruebas rigurosas en dispositivos iPhone, Android, Mac y Windows. Verificamos la integridad de los formularios, las respuestas de servidor, los certificados SSL y la configuración de metadatos SEO.</p>
+              
+              <div class="timeline-tasks">
+                <span>Pruebas de estrés y formularios</span>
+                <span>Auditoría Core Web Vitals en verde</span>
+                <span>Pruebas en navegadores reales</span>
+                <span>Validación Schema JSON-LD</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 05 -->
+          <div class="timeline-step" data-reveal>
+            <div class="serif timeline-n">05</div>
+            <div class="timeline-content">
+              <div class="timeline-meta-bar">
+                <span class="timeline-duration-badge">Duración: 1 día</span>
+                <span class="timeline-deliverable">Entregable: Despliegue en Producción, Accesos Totales y Garantía</span>
+              </div>
+              <h3 class="timeline-title">Despliegue en Producción, Capacitación y Garantía</h3>
+              <p class="timeline-desc">Apuntamos los registros DNS, activamos la infraestructura de producción, te entregamos todas las credenciales de administración y repositorio, y grabamos una videocapacitación para que gestiones tu sistema con total autonomía.</p>
+              
+              <div class="timeline-tasks">
+                <span>Configuración de DNS y SSL</span>
+                <span>Video-tutoriales para tu equipo</span>
+                <span>Entrega de código fuente y accesos</span>
+                <span>30 días de soporte post-lanzamiento</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Guarantees & Contractual Commitments -->
+    <section class="process" style="border-top: 1px solid var(--border);">
+      <div class="container">
+        <div class="section-head-center" data-reveal>
+          <p class="eyebrow eyebrow-light">COMPROMISOS CONTRACTUALES</p>
+          <h2 class="serif section-title-light">Garantías que respaldan <em>cada proyecto.</em></h2>
+          <p class="section-desc-light" style="max-width: 620px; margin: 0.75rem auto 0;">Nuestro modelo de trabajo se basa en la claridad contractual y el respeto por los recursos de tu empresa.</p>
+        </div>
+        <div class="value-grid">
+          <div class="value-card value-card-dark" data-reveal>
+            <div class="value-title">1. Fechas de Entrega por Contrato</div>
+            <p class="value-desc">No asumimos proyectos sin fijar un cronograma realista. Si acordamos una fecha de entrega, esa fecha se cumple sin excusas.</p>
+          </div>
+          <div class="value-card value-card-dark" data-reveal>
+            <div class="value-title">2. Propiedad Absoluta del Código</div>
+            <p class="value-desc">El código, el dominio, el hosting y los repositorios son de tu empresa al 100%. No cobramos licencias ocultas para liberarte los accesos.</p>
+          </div>
+          <div class="value-card value-card-dark" data-reveal>
+            <div class="value-title">3. 30 Días de Garantía Incluida</div>
+            <p class="value-desc">Cualquier error, inconsistencia o bug técnico que surja en los primeros 30 días se corrige de manera inmediata sin costo adicional.</p>
+          </div>
+          <div class="value-card value-card-dark" data-reveal>
+            <div class="value-title">4. Capacitación Práctica en Video</div>
+            <p class="value-desc">Grabamos tutoriales a medida de tu propio panel de administración para que tu equipo aprenda a gestionar pedidos, productos y textos sin depender de nosotros.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="services" style="border-top: 1px solid var(--border);">
+      <div class="container">
+        <div class="section-head-center" data-reveal>
+          <p class="eyebrow eyebrow-accent">PREGUNTAS FRECUENTES</p>
+          <h2 class="serif section-title">Todo lo que necesitas saber<br>sobre <em>la metodología.</em></h2>
+        </div>
+
+        <div class="faq-list" style="max-width: 800px; margin: 3rem auto 0;">
+          <details class="faq-item" data-reveal>
+            <summary class="faq-q">¿Qué información debo tener lista para empezar?</summary>
+            <div class="faq-a">
+              <p>Lo esencial es tener clara la propuesta de valor de tu negocio, los servicios o productos que ofreces, y si cuentas con identidad gráfica (logo, colores). Si no dispones de textos o fotografías, en la fase 1 te guiamos con plantillas de contenido y te ayudamos a redactar copies orientados a conversión.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-reveal>
+            <summary class="faq-q">¿Cómo se gestionan los pagos durante el proyecto?</summary>
+            <div class="faq-a">
+              <p>Trabajamos habitualmente con un esquema de 50% de anticipo al firmar la propuesta técnica y 50% contra entrega final y aprobación en el entorno de pruebas, previo al despliegue en producción. En proyectos de software de mayor envergadura podemos estructurar hitos en 3 fases (40% / 30% / 30%).</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-reveal>
+            <summary class="faq-q">¿Puedo solicitar cambios durante la fase de diseño?</summary>
+            <div class="faq-a">
+              <p>Sí, absolutamente. En la fase 02 revisamos los prototipos interactivos juntos y realizamos los ajustes necesarios en la interfaz hasta que estés 100% satisfecho, antes de comenzar el desarrollo en código.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-reveal>
+            <summary class="faq-q">¿Quién se encarga de comprar el dominio y el hosting?</summary>
+            <div class="faq-a">
+              <p>Podemos asesorarte para que los adquieras a tu propio nombre (en proveedores recomendados como Cloudflare, Namecheap, Hetzner, Vercel) o bien encargarnos nosotros de la configuración completa bajo un plan gestionado con facturación ecuatoriana.</p>
+            </div>
+          </details>
+
+          <details class="faq-item" data-reveal>
+            <summary class="faq-q">¿Qué canal de comunicación utilizamos durante el desarrollo?</summary>
+            <div class="faq-a">
+              <p>Mantenemos un canal directo por WhatsApp o Slack con el ingeniero líder asignado a tu proyecto, además de reuniones de sincronización programadas por Google Meet en hitos clave.</p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+      <div class="container">
+        <div class="final-cta-card" data-reveal>
+          <p class="eyebrow eyebrow-accent">COMENCEMOS ESTA SEMANA</p>
+          <h2 class="serif final-cta-title">¿Listo para iniciar la <em>Fase 01?</em></h2>
+          <p class="final-cta-desc">Cuéntanos tu proyecto y agendemos una llamada de diagnóstico de 20 minutos sin compromiso.</p>
+          <div class="final-cta-actions">
+            <a href="https://wa.me/593992555864?text=Hola%20Vektra%20Systems,%20quiero%20iniciar%20la%20Fase%201%20de%20mi%20proyecto" class="btn btn-whatsapp" target="_blank" rel="noopener">
+              Agendar Diagnóstico por WhatsApp <svg class="svg-icon" width="14" height="14" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            </a>
+            <a href="/planes" class="btn btn-secondary">
+              Ver Planes y Precios
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <a href="/" class="footer-logo">
+              <img src="/img/logo-light.webp" alt="Vektra Systems Logo" class="footer-logo-img" width="180" height="38">
+            </a>
+            <p>Ingeniería de software, páginas web de alto impacto y sistemas empresariales construidos con precisión para empresas en Ecuador y Latinoamérica.</p>
+            <div class="footer-social">
+              <a href="https://wa.me/593992555864" target="_blank" rel="noopener">WhatsApp</a>
+              <a href="https://www.instagram.com/vektrasystems" target="_blank" rel="noopener">Instagram</a>
+              <a href="https://github.com/vektrasystems" target="_blank" rel="noopener">GitHub</a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Servicios</h4>
+            <a href="/diseno-web">Diseño & Desarrollo Web</a>
+            <a href="/ecommerce">E-commerce & Tiendas</a>
+            <a href="/sistemas-empresariales">Sistemas & ERP</a>
+            <a href="/automatizaciones">Automatizaciones & IA</a>
+            <a href="/aplicaciones">Aplicaciones Web & SaaS</a>
+            <a href="/seo">SEO Técnico & Posicionamiento</a>
+            <a href="/mantenimiento-web">Mantenimiento Web</a>
+          </div>
+          <div class="footer-col">
+            <h4>Empresa & Proyectos</h4>
+            <a href="/nosotros">Nosotros</a>
+            <a href="/planes">Planes & Tarifas</a>
+            <a href="/portafolio">Portafolio de Casos</a>
+            <a href="/proceso">Metodología & Proceso</a>
+            <a href="/blog">Blog & Recursos</a>
+            <a href="/contacto">Contacto</a>
+          </div>
+          <div class="footer-col">
+            <h4>Cobertura Local</h4>
+            <a href="/diseno-web-cuenca">Desarrollo Web en Cuenca</a>
+            <a href="/diseno-web-quito">Desarrollo Web en Quito</a>
+            <a href="/diseno-web-guayaquil">Desarrollo Web en Guayaquil</a>
+            <div style="margin-top: 1.25rem;">
+              <a href="mailto:info@vektrasystems.com" style="color:var(--text-light); display:block; margin-bottom:0.25rem;">info@vektrasystems.com</a>
+              <span class="footer-static">+593 99 255 5864 · Cuenca, Ecuador</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Vektra Systems. Todos los derechos reservados.</span>
+          <div class="footer-legal-links">
+            <a href="/politica-privacidad">Política de Privacidad</a>
+            <span aria-hidden="true">·</span>
+            <a href="/terminos">Términos y Condiciones</a>
+          </div>
+          <span>Ingeniería digital desarrollada en Cuenca, Ecuador</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- Floating WhatsApp CTA -->
+  <a href="https://wa.me/593992555864?text=Hola%20Vektra%20Systems,%20quiero%20conocer%20su%20proceso%20de%20desarrollo" class="float-whatsapp" target="_blank" rel="noopener" aria-label="Escribir a un ingeniero por WhatsApp">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.4-1.5-.9-.8-1.5-1.8-1.6-2.1-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.1.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.2L2 22l4.9-1.3C8.4 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.7 0-3.4-.5-4.8-1.3l-.3-.2-3.2.8.9-3.1-.2-.3C3.6 14.5 3 13.3 3 12c0-4.9 4.1-9 9-9s9 4.1 9 9-4.1 9-9 9z"/></svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <script src="/js/main.js"></script>
 </body>
 </html>
