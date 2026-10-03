@@ -1,6 +1,6 @@
 # Vektra Systems — sitio web
 
-Sitio web de Vektra Systems: Node.js + Express sirviendo un frontend estático (HTML/CSS/JS) con animaciones (GSAP) y SEO optimizado.
+Sitio web de Vektra Systems: Node.js + Express sirviendo un frontend estático (HTML/CSS/JS) con animaciones nativas (CSS + IntersectionObserver, sin librerías) y SEO optimizado.
 
 ## Estructura
 
@@ -10,7 +10,7 @@ package.json
 public/
   index.html         → todo el contenido del sitio
   css/style.css
-  js/main.js         → animaciones, countdown, menú móvil
+  js/main.js         → reveal, cotizador, filtros, menú móvil
   img/                → imágenes del sitio
   robots.txt
   sitemap.xml
